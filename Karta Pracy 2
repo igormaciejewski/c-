@@ -11,6 +11,17 @@ else
 }
 */
 
+//Zad 2
+a = int.Parse(Console.ReadLine());
+if (a % 17 == 0 && 99 < a && a < 1000)
+{
+      Console.WriteLine("Spelnia warunki");
+}
+else
+{
+      Console.WriteLine("Nie spelnia warunkow");
+}
+            Console.WriteLine();
 
 
 // Zad 3
