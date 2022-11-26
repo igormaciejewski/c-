@@ -1,0 +1,106 @@
+//Zad.1
+/*for( int i = 1; i < 31;i++ )
+    Console.WriteLine( i );
+*/
+
+
+//Zad.2
+/*int a = int.Parse(Console.ReadLine());
+for (int i = 0; i <= a; i++)
+    if (i % 2 != 0)
+Console.WriteLine(i*i);
+*/
+
+
+//Zad.3
+/*for (int i = 1000; i < 10000; i++)
+    if (i % 379 == 0)
+Console.WriteLine(i);
+*/
+
+
+//Zad.4
+/*for (int i = 100; i < 1000; i++)
+    if (i % 5 == 0 || i % 6 == 0 || i % 11 == 0)
+Console.WriteLine(i);
+*/
+
+
+//Zad.5
+/*int n = int.Parse(Console.ReadLine());
+int suma = 0;
+for (int i = 0; i < n; i++)
+{
+    int a = int.Parse(Console.ReadLine());
+    suma = suma += a;
+}
+Console.WriteLine(suma);
+*/
+
+
+//Zad.6
+/*Console.WriteLine("ile chcesz liczb:");
+int n = int.Parse(Console.ReadLine());
+int suma = 0;
+for (int i = 2; i <= n * 2; i += 2)
+    suma += i;
+Console.WriteLine($"Suma to:{suma}");
+*/
+
+
+//Zad.7
+/*Console.WriteLine("ile chcesz liczb:");
+int n = int.Parse(Console.ReadLine());
+int suma = 0;
+for (int i = 11; i <= (n * 2)+11; i += 2)
+    suma += i;
+Console.WriteLine($"Suma to:{suma}");
+*/
+
+
+//Zad.8
+/*Console.Write("Podaj początkowy kapitał: ");
+int w0 = int.Parse(System.Console.ReadLine());
+Console.Write("Podaj lata inwestycji: ");
+int l = int.Parse(System.Console.ReadLine());
+double suma = 0;
+suma = w0;
+for (int i = 0; i < l * 12; i++)
+{
+    double a = suma * 0.06 * 1 / 12;
+    suma = suma + a;
+}
+Console.WriteLine($"Koncowy kapital wynosi {suma}");
+*/
+
+
+//Zad.9
+/*Console.Write("Podaj ilość liczb: ");
+int n = int.Parse(System.Console.ReadLine());
+int m = 21;
+int suma = 0;
+for (int i = 0; i <= n; i++)
+{
+    for (int a = 0; a < i; a += m)
+    {
+        suma += m;
+        m += 100;
+    }
+}
+Console.WriteLine($"Suma to: {suma}");
+*/
+
+
+//Zad.10
+/*for (int i = 1; i <= 1000; i++)
+{
+    if (i % 10 == Math.Sqrt(i))
+    {
+        System.Console.WriteLine(i);
+    }
+    else if (i % 100 == Math.Sqrt(i))
+    {
+        System.Console.WriteLine(i);
+    }
+}
+*/
