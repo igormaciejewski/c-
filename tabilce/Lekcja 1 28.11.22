@@ -54,3 +54,44 @@ for (int i = 0; i < W.Length; i++)
 }
 Console.WriteLine(suma);
 
+//wypisz najwiekszya liczbe
+
+int maksik = int.MinValue;
+int n = int.Parse(Console.ReadLine());
+int[] W = new int[n];
+for (int i = 0; i < W.Length; i++)
+{
+    W[i] = int.Parse(Console.ReadLine());
+}
+for (int i = 0; i < W.Length; i++)
+{
+    if (W[i] > maksik)
+    {
+        maksik = W[i];
+    }
+}
+Console.WriteLine(maksik);
+
+
+//wypisz ile jest najwiekszych liczby
+
+int ilosc = 0;
+int maksik = int.MinValue;
+int n = int.Parse(Console.ReadLine());
+int[] W = new int[n];
+for (int i = 0; i < W.Length; i++)
+{
+    W[i] = int.Parse(Console.ReadLine());
+}
+for (int i = 0; i < W.Length; i++)
+{
+    if (W[i] > maksik)
+    {
+        maksik = W[i];
+    }
+    if (W[i] == maksik)
+    {
+        ilosc += 1;
+    }
+}
+Console.WriteLine(ilosc);
