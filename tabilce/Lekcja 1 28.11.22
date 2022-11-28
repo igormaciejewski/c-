@@ -17,3 +17,27 @@ for (int i = 0; i < L.Length; i++)
     Console.WriteLine(L[i]);
 }
 */
+
+
+int n = int.Parse(Console.ReadLine());
+int[] W = new int[n];
+for (int i = 0; i < W.Length; i++)
+{
+    W[i] = int.Parse(Console.ReadLine());
+}
+for (int i = 0; i < W.Length; i++)
+{
+    Console.Write(W[i] + " ");
+}
+
+
+//Stworz tablice n liczb wpisanych przez usera. Wypisz ostatnia liczbe.
+
+
+int n = int.Parse(Console.ReadLine());
+int[] W = new int[n];
+for (int i = 0; i < W.Length; i++)
+{
+    W[i] = int.Parse(Console.ReadLine());
+}
+Console.Write(W[n - 1] + " ");
