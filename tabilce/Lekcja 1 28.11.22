@@ -88,10 +88,12 @@ for (int i = 0; i < W.Length; i++)
     if (W[i] > maksik)
     {
         maksik = W[i];
+        ilosc = 1;
     }
-    if (W[i] == maksik)
+    else if (W[i] == maksik)
     {
         ilosc += 1;
     }
 }
 Console.WriteLine(ilosc);
+
