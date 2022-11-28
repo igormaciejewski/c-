@@ -41,3 +41,16 @@ for (int i = 0; i < W.Length; i++)
     W[i] = int.Parse(Console.ReadLine());
 }
 Console.Write(W[n - 1] + " ");
+
+//napisz tablice i sume wszstkich liczb 
+
+int n = int.Parse(Console.ReadLine());
+int[] W = new int[n];
+int suma = 0;   
+for (int i = 0; i < W.Length; i++)
+{
+    W[i] = int.Parse(Console.ReadLine());
+    suma+=W[i];
+}
+Console.WriteLine(suma);
+
