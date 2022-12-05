@@ -69,6 +69,36 @@ for (int i = 0; i < T.Length; i++)
 Console.WriteLine(T.Min());
 
 
+//Z.3
+Random r = new Random();
+int[] T = new int[20];
+for (int i = 0; i < T.Length; i++)
+{
+    T[i] = r.Next(1,20);
+}
+for (int i = 0; i < T.Length; i++)
+{
+    Console.Write(T[i] + " ");
+}
+int maks = T[0];
+int ilosc = 1;
+for (int i = 0; i < T.Length; i++)
+{
+    if (T[i] > maks)
+    {
+        maks = T[i];
+        ilosc = 1;
+    }
+    else if (T[i] == maks)
+    {
+        ilosc += 1;
+    }    
+}
+Console.WriteLine();
+Console.WriteLine(maks + " - " + ilosc);
+
+
+//Z.4
 
 
 
@@ -92,3 +122,31 @@ for (int i = 0; i < T.Length; i++)
 int ez = T.Max();
 int es = T.Min();
 Console.WriteLine(ez - es);
+
+
+
+
+//Z.8
+Random r = new Random();
+int[] T = new int[20];
+for (int i = 0; i < T.Length; i++)
+{
+    T[i] = r.Next(1,20);
+}
+for (int i = 0; i < T.Length; i++)
+{
+    Console.Write(T[i] + " ");
+}
+int parzyste = 0;
+for (int i = 0; i < T.Length; i++)
+{
+    if (T[i] % 2 == 0)
+    {
+        parzyste += 1;
+    }
+}
+int nieparzyste = 20 - parzyste;
+Console.WriteLine("\n\nParzystych: " + parzyste + " Nieparzyste: " + nieparzyste);
+if (nieparzyste > parzyste) Console.WriteLine("wiecej jest nie parzystych");
+if (nieparzyste == parzyste) Console.WriteLine("jest tyle samo");
+if (nieparzyste < parzyste) Console.WriteLine("wiecej jest parzystych");
