@@ -1,3 +1,0 @@
-//Random 
-Random r = new Random();
-Console.WriteLine(r.Next(10, 20));
