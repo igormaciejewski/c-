@@ -1,0 +1,61 @@
+//Z.1
+
+czesc
+
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+if (b - a == c - b) Console.WriteLine("jest artmetyczna");
+if (b / a == c / b) Console.WriteLine("jest artmetyczna");
+
+//Z.2
+
+int suma = 0;
+for (int i = 100; i < 1000; i++) 
+if (i % 8 == 0 && i % 16 != 0)
+    {
+        suma = suma + i;
+    }
+Console.WriteLine(suma);
+
+
+//Z.3
+        
+int podzielnik;
+
+for (int i = 99; i > 9; i++)
+{
+    if (i % 7 == 0)
+    {
+        podzielnik = i;
+        break;
+    }
+}
+int suma = 0;
+for (int j = 100; j<1000; j++)
+{
+    if (j % podzielnik == 0)
+    {
+        suma = j;
+    }
+}
+Console.WriteLine(suma);
+
+//Z.4
+
+int ilosc = 0;
+int cd = 0;
+int cj = 0;
+for (int i = 10; i<100; i++)
+{
+    cd = i / 10;
+    cj = i % 10;
+
+    if ( cd >= 2 * cj)
+    {
+        ilosc += 1;
+    }
+}
+Console.WriteLine(ilosc);
+
+//Z.5
