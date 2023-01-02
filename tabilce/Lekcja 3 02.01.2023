@@ -17,3 +17,30 @@ for (int i = 0; i < T.Length; i++)
 }
 Console.WriteLine(suma);
 Console.WriteLine(suma / 100);
+
+//tablice jakies
+
+for (int i = 1; i < 11; i++) 
+{
+    for (int j = 1; j < 11; j++)
+    {
+        Console.Write(i * j + "\t");
+    }
+    Console.WriteLine();
+}
+
+int[,] M = new int[5, 5];
+M[0, 0] = 6;
+M[1, 1] = 6; 
+M[2, 2] = 6;
+M[3, 3] = 6;
+M[4, 4] = 6;
+for (int i = 0; i < 5; i++)
+{
+    for (int j = 0; j < 5; j++)
+    {
+        Console.Write(M[i, j] + "\t");
+    }
+    Console.WriteLine();
+}
+
