@@ -51,3 +51,5 @@ while ((bufor = sr.ReadLine()) != null)
 {
     Console.WriteLine(bufor);
 }
+
+//plik w tablicy
