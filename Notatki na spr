@@ -79,3 +79,49 @@ for(int i=1; i<=n; i++)
 {
     Console.WriteLine(zad2_3(i));
 }
+
+//Funckje
+
+//string
+
+string Funkcja()
+{
+    string napis = Console.ReadLine();
+    char[] T = napis.ToCharArray();
+    Array.Reverse(T);
+    Console.WriteLine(new string(T));
+    return new string(T);
+}
+
+Console.WriteLine(Funkcja());
+
+//int
+
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int nwm(int a, int b)
+{
+    return a + b;
+}
+Console.WriteLine(nwm(a, b));
+
+//suma liczb liczby 
+
+//KAzda
+
+int liczba = 345;
+int sumaCyfr = 0;
+
+while (liczba > 0)
+{
+    sumaCyfr += liczba % 10;
+    liczba /= 10;
+}
+
+Console.WriteLine("Suma cyfr liczby wynosi {0}", sumaCyfr);
+
+// 2 cyfrowa 
+
+int liczba = 27;
+int sumaCyfr = (liczba / 10) + (liczba % 10);
+Console.WriteLine("Suma cyfr liczby {0} wynosi {1}", liczba, sumaCyfr);
