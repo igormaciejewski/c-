@@ -1,0 +1,13 @@
+//Odczytywanie PLiku
+string line = System.IO.File.ReadAllText(@"C:\Users\spide\OneDrive\Pulpit\Technikum\plik.txt");
+Console.WriteLine(line);
+
+
+ArrayList al = new ArrayList();
+
+for (int i = 0; i < al.Count; i++)
+{
+    al.Add(line);
+}
+al.Sort();
+Console.WriteLine();
