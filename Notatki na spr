@@ -20,6 +20,10 @@ StreamWriter sw = File.CreateText(file_name);
 sw.WriteLine();
 sw.Close();
 
+//Tworzenie pliku
+
+StreamWriter sw = File.CreateText(file_name);
+
 //Zapisz do pliku 10 losowych liczb dwucyfrowych. Odczytaj ten plik i wypisz inny z liczb
 
 Random random = new Random();
@@ -41,3 +45,37 @@ for (int i = 0; i < 10; i++)
 }
 
 sw.Close();
+
+//Rekurencje jak tworzyc
+
+Napisz rekurencyjnie n liczba: 6, 12, 24,48,96...
+
+//Szkuanie jaki jest ciag
+
+// a[1] = 6
+// a[n] = a[n-1] * 2
+// przykład: n = 2 -> a[2] = a[1] * 2 = 6 * 2 = 12
+// przykład: n = 3 -> a[3] = a[2] * 2 = a[1] * 2 * 2 = 6 * 2 * 2 = 24
+
+//Tworzenie kodu
+
+        public static int zad2_2(int n)
+        {
+            if(n==1)
+            {
+                return 6;
+            }
+            else
+            {
+                return zad2_2(n - 1) * 2;
+            }
+        }
+        
+//Wywolywanie rekurencji
+
+int n = 10;
+
+for(int i=1; i<=n; i++)
+{
+    Console.WriteLine(zad2_3(i));
+}
