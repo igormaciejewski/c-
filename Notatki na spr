@@ -1,4 +1,5 @@
 //Odczytywanie PLiku
+
 string line = System.IO.File.ReadAllText(@"C:\Users\spide\OneDrive\Pulpit\Technikum\plik.txt");
 Console.WriteLine(line);
 
@@ -11,3 +12,11 @@ for (int i = 0; i < al.Count; i++)
 }
 al.Sort();
 Console.WriteLine();
+
+//Zapisywanie do pilku
+
+string file_name = @"C:\Users\spide\OneDrive\Pulpit\Technikum\plik.txt";
+StreamWriter sw = File.CreateText(file_name);
+sw.WriteLine();
+sw.Close();
+
