@@ -20,9 +20,19 @@ StreamWriter sw = File.CreateText(file_name);
 sw.WriteLine();
 sw.Close();
 
-//Tworzenie pliku
+// Nadpisywanie pliku
 
-StreamWriter sw = File.CreateText(file_name);
+
+using System.IO;
+
+// ścieżka do pliku, który chcemy nadpisać
+string filePath = @"C:\example\file.txt";
+
+// tekst, który chcemy zapisać w pliku
+string fileContent = "Hello World!";
+
+// nadpisanie pliku
+File.WriteAllText(filePath, fileContent);
 
 //Zapisz do pliku 10 losowych liczb dwucyfrowych. Odczytaj ten plik i wypisz inny z liczb
 
