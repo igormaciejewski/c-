@@ -1,1 +1,29 @@
 
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] arr = { 3, 5, 1, 9, 2, 7, 6, 8, 4 };
+
+        Console.WriteLine("Before sorting:");
+        PrintArray(arr);
+
+        Array.Sort(arr);
+
+        Console.WriteLine("After sorting:");
+        PrintArray(arr);
+
+        Console.ReadKey();
+    }
+
+    static void PrintArray(int[] arr)
+    {
+        foreach (int element in arr)
+        {
+            Console.Write(element + " ");
+        }
+        Console.WriteLine();
+    }
+}
