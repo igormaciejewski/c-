@@ -26,13 +26,13 @@ sw.Close();
 using System.IO;
 
 // ścieżka do pliku, który chcemy nadpisać
-string filePath = @"C:\example\file.txt";
+string file_name = @"C:\example\file.txt";
 
 // tekst, który chcemy zapisać w pliku
 string fileContent = "Hello World!";
 
 // nadpisanie pliku
-File.WriteAllText(filePath, fileContent);
+File.WriteAllText(file_name, fileContent);
 
 //Zapisz do pliku 10 losowych liczb dwucyfrowych. Odczytaj ten plik i wypisz inny z liczb
 
