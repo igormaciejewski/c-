@@ -1,5 +1,7 @@
 //Odczytywanie PLiku
 
+//sposob 1
+
 string line = System.IO.File.ReadAllText(@"C:\Users\spide\OneDrive\Pulpit\Technikum\plik.txt");
 Console.WriteLine(line);
 
@@ -12,6 +14,11 @@ for (int i = 0; i < al.Count; i++)
 }
 al.Sort();
 Console.WriteLine();
+
+//sposob 2
+
+StreamReader read = new StreamReader(".txt/Litwa.txt");
+while(!read.EndOfStream) System.Console.WriteLine(read.ReadLine()+"\t");
 
 //Zapisywanie do pilku
 
